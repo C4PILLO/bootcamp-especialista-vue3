@@ -16,7 +16,7 @@ import empresas from './empresas.json'
     </tr>
     </thead>
     <tbody>
-      <tr v-for="empresa in empresas" v-bind:key="">
+      <tr v-for="empresa in empresas" :key="empresa.id">
         <td>{{empresa.id}}</td>
         <td>{{empresa.name}}</td>
         <td>{{empresa.owner}}</td>
